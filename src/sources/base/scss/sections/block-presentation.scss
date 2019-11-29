@@ -1,0 +1,118 @@
+&.block-presentation {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 140px;
+
+    .presentation-wrapper {
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+
+        .main-title {
+            color: #05031D;
+            font: 400 50px/70px $sf;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .main-subtitle {
+            color: #525050;
+            font: 400 25px/45px $sf;
+            text-align: center;
+            margin-bottom: 120px;
+        }
+
+        .presentation-slider-wrapper {
+            position: relative;
+            max-width: 1160px;
+            width: 100%;
+            margin: 0 auto;
+
+            .splash {
+                display: block;
+                position: absolute;
+                z-index: -1;
+
+                &.splash1 {
+                    top: -50px;
+                    left: -30px;
+                }
+
+                &.splash2 {
+                    bottom: -84px;
+                    right: -76px;
+                }
+            }
+
+            .line {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+
+            .line {}
+
+            .pres-gal {
+                padding-bottom: 30px;
+
+                .slick-slide {
+                    padding: 15px;
+
+                    .inner-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+
+                        }
+                    }
+
+                    &:nth-child(2n+1) {
+                        padding-top: 60px;
+                    }
+                }
+
+                .slick-dots {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 18px;
+                        height: 18px;
+                        margin: 0 15px;
+
+                        &.slick-active {
+                            button {
+                                width: 18px;
+                                height: 18px;
+                                background: #4942D3;
+                                @include trans;
+                            }
+                        }
+
+                        button {
+                            display: block;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            background: #9793E2;
+                            @include trans;
+
+                            &:before, &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

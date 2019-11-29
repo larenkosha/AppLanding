@@ -10,6 +10,18 @@
 // DEV PAGES
 @import 'includes/dev-pages';
 
+.overflow-wrapper {
+    overflow: hidden;
+}
+
 .block {
     @import 'sections/block-header';
+    @import 'sections/block-content';
+    @import 'sections/block-banner';
+    @import 'sections/block-partners';
+    @import 'sections/block-features';
+    @import 'sections/block-interact';
+    @import 'sections/block-presentation';
+    @import 'sections/block-download';
+    @import 'sections/block-subscribe';
 }

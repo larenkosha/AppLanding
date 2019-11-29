@@ -1,0 +1,12 @@
+mixin partners(src, alt)
+    .slide: a.inner-wrapper(href="#"): img(src=src, alt=alt)
+
+mixin feature(src, alt, title, desc)
+    .feature-item
+        .item-icon: img(src=src, alt=alt)
+        .item-info
+            .title=title
+            .desc=desc
+
+mixin pres(src, alt)
+    .slide: a.inner-wrapper(href="#"): img(src=src, alt=alt)

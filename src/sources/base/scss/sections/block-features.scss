@@ -1,0 +1,105 @@
+&.block-features {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 140px;
+
+    .features-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+
+        .main-title {
+            flex: 1 1 100%;
+            color: #05031D;
+            font: 400 50px/70px $sf;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .main-subtitle {
+            flex: 1 1 100%;
+            color: #525050;
+            font: 400 25px/45px $sf;
+            text-align: center;
+            margin-bottom: 85px;
+        }
+
+        .features-prev {
+            position: relative;
+            flex: 0 1 512px;
+
+            .prev-splash {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 798px;
+                height: 763px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: .7;
+                z-index: -1;
+            }
+
+            .prev-image {
+                position: relative;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .features-info {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1 1;
+            padding-left: 10%;
+
+            .feature-item {
+                display: flex;
+                align-items: center;
+                flex: 0 1 60%;
+
+                .item-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 94px;
+                    height: 94px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 40px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .item-info {
+                    flex: 1 1;
+
+                    .title {
+                        color: #05031D;
+                        font: 400 30px/45px $sf;
+                        margin-bottom: 10px;
+                    }
+
+                    .desc {
+                        color: #525050;
+                        font: 400 15px/25px $sf;
+                    }
+                }
+
+                &:nth-child(2) {margin-left: 110px;}
+                &:nth-child(3) {margin-left: 140px;}
+                &:nth-child(4) {margin-left: 70px;}
+            }
+        }
+    }
+}

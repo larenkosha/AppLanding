@@ -1,0 +1,98 @@
+&.block-subscribe {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 140px;
+
+    .splash {
+        display: block;
+        position: absolute;
+        width: 732px;
+        height: 700px;
+        top: 100%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .subscribe-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+
+        .top-line {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex: 0 1 600px;
+
+            .main-title {
+                flex: 0 1 376px;
+                color: #05031D;
+                font: 400 50px/70px $sf;
+                text-align: center;
+                margin-bottom: 45px;
+            }
+
+            .main-subtitle {
+                flex: 0 1 566px;
+                color: #464646;
+                font: 400 25px/45px $sf;
+                text-align: center;
+                margin-bottom: 70px;
+            }
+        }
+
+        .form-wrapper {
+            display: flex;
+            justify-content: center;
+            flex: 1 1 100%;
+
+            .form {
+                flex: 0 1 840px;
+
+                .form-box {
+                    display: flex;
+                    align-items: center;
+                    flex: 0 1 848px;
+                    border-radius: 60px;
+                    background: #352DDC;
+                    overflow: hidden;
+                    padding: 15px;
+
+                    input {
+                        flex: 1 1;
+                        color: #ffffff;
+                        font: 400 30px/45px $sf;
+                        padding: 0 20px;
+
+                        &::placeholder {
+                            color: #ffffff;
+                            font: 400 30px/45px $sf;
+                        }
+                    }
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex: 0 1 218px;
+                        height: 88px;
+                        border-radius: 60px;
+                        background: #ffffff;
+                        color: #352DDC;
+                        font: 400 28px $sf;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+&.block-partners {
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 100px;
+
+    .partners-wrapper {
+        max-width: 1360px;
+        width: 100%;
+        padding: 0 80px;
+        margin: 0 auto;
+
+        .prtnr-slider {
+            max-width: 1120px;
+            width: 100%;
+            margin: 0 auto;
+
+            .slide {
+                padding: 40px 15px;
+
+                .inner-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include trans;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        @include trans;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -12,3 +12,22 @@
 
 
 .cf { @include cf(); }
+
+.stl-btn1 {
+    display: block;
+    position: relative;
+    width: fit-content;
+    border-radius: 30px;
+    background: #352DDC;
+    box-shadow: 0px 0px 10px rgba(79,72,217,.3);
+    color: #ffffff;
+    font: 400 18px/18px $sf;
+    padding: 18px;
+    cursor: pointer;
+    @include trans;
+    
+    &:hover {
+        background: #4942E2;
+        @include trans;
+    }
+}
