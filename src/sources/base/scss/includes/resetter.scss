@@ -19,6 +19,11 @@ h1, h2, h3, h4, h5, h6, p, span, b, i, li, td{
     color: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -29,36 +34,32 @@ ul {
     }
 }
 
-p, b {
-    font: 300 16px/28px $bf;
-    margin: 0 0 16px;
+p {
+    font: 400 16px $bf;
 
     a {
-        font: inherit;
         color: inherit;
+        font: inherit;
     }
 }
 
 a {
-    text-decoration: none;
-    font: 300 14px/26px $bf;
     color: #222; 
+    font: 400 16px $bf;
+    text-decoration: none;
 }
 
 b, strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
-button {
-    padding: 0;
+button,
+input,
+textarea {
     border-radius: 0;
     border: none;
     background: none;
-}
-
-input {
-    border: none;
-    background: none;
+    box-shadow: none;
     padding: 0;
     margin: 0;
 }

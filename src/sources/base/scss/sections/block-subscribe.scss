@@ -32,20 +32,20 @@
             flex-wrap: wrap;
             flex: 0 1 600px;
 
-            .main-title {
+            h2 {
                 flex: 0 1 376px;
                 color: #05031D;
-                font: 400 50px/70px $sf;
+                font: 400 48px $sf;
                 text-align: center;
-                margin-bottom: 45px;
+                margin-bottom: 20px;
             }
 
-            .main-subtitle {
+            h4 {
                 flex: 0 1 566px;
                 color: #464646;
-                font: 400 25px/45px $sf;
+                font: 400 25px $sf;
                 text-align: center;
-                margin-bottom: 70px;
+                margin-bottom: 60px;
             }
         }
 
@@ -55,12 +55,12 @@
             flex: 1 1 100%;
 
             .form {
-                flex: 0 1 840px;
+                flex: 0 1 756px;
 
                 .form-box {
                     display: flex;
                     align-items: center;
-                    flex: 0 1 848px;
+                    flex: 1 1 100%;
                     border-radius: 60px;
                     background: #352DDC;
                     overflow: hidden;
@@ -69,12 +69,21 @@
                     input {
                         flex: 1 1;
                         color: #ffffff;
-                        font: 400 30px/45px $sf;
+                        font: 400 30px $sf;
                         padding: 0 20px;
 
                         &::placeholder {
-                            color: #ffffff;
-                            font: 400 30px/45px $sf;
+                            color: inherit;
+                            font: inherit;
+                            @include trans;
+                        }
+
+                        &:focus,
+                        &:active {
+                            &::placeholder {
+                                opacity: 0;
+                                @include trans;
+                            }
                         }
                     }
 
@@ -82,14 +91,20 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        flex: 0 1 218px;
-                        height: 88px;
+                        flex: 0 1 220px;
+                        height: 80px;
                         border-radius: 60px;
                         background: #ffffff;
                         color: #352DDC;
                         font: 400 28px $sf;
                         text-align: center;
                         cursor: pointer;
+                        @include trans;
+
+                        &:hover {
+                            opacity: .7;
+                            @include trans;
+                        }
                     }
                 }
             }
