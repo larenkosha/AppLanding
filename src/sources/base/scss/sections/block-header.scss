@@ -5,13 +5,13 @@
     left: 0;
     right: 0;
     padding: 0 15px;
+    z-index: 10;
     @include trans;
 
     &.sticky {
         position: fixed;
         background: #ffffff;
-        border-bottom: 1px solid #cccccc;
-        box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
         z-index: 9;
         @include trans;
 
@@ -28,6 +28,10 @@
         flex-wrap: wrap;
         padding: 54px 0;
         @include trans;
+
+        @media only screen and (max-width: 992px) {
+            padding: 30px 0;
+        }
     }
 
     .header-logo {
@@ -58,6 +62,69 @@
             height: 40px;
             border-radius: 4px;
             border: 1px solid #cecece;
+            overflow: hidden;
+            cursor: pointer;
+            @include trans;
+
+            &.active {
+                border-color: transparent;
+                @include trans;
+
+                span {
+                    transform: translate(200%, -50%);
+                    background: #000000;
+                    opacity: 0;
+                    @include trans;
+                }
+
+                &:before,
+                &:after {
+                    background: #000000;
+                    @include trans;
+                }
+
+                &:before {
+                    top: 18px;
+                    transform: rotate(-135deg);
+                    @include trans;
+                }
+
+                &:after {
+                    bottom: 18px;
+                    transform: rotate(135deg);
+                    @include trans;
+                }
+            }
+
+            span {
+                position: absolute;
+                width: 30px;
+                height: 2px;
+                top: 50%;
+                left: 4px;
+                transform: translateY(-50%);
+                background: #cecece;
+                @include trans;
+            }
+
+            &:before,
+            &:after {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 2px;
+                left: 4px;
+                background: #cecece;
+                @include trans;
+            }
+
+            &:before {
+                top: 10px;
+            }
+
+            &:after {
+                bottom: 10px;
+            }
         }
 
         .menu-wrapper {
@@ -71,6 +138,8 @@
                 align-items: center;
 
                 .menu-item {
+                    padding: 0 20px;
+
                     &.active {
                         a {
                             color: #352DDC;
@@ -83,7 +152,6 @@
                         width: fit-content;
                         color: #1B1B1D;
                         @include adaptive-font(400, 20, 18);
-                        padding: 0 20px;
                         @include trans;
 
                         &:hover {
@@ -91,7 +159,28 @@
                             @include trans;
                         }
                     }
+
+                    @media only screen and (max-width: 992px) {
+                        padding: 0 10px;
+
+                        &:last-child {
+                            margin-right: 10px;
+                        }
+                    }
                 }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            justify-content: flex-end;
+
+            .burger {
+                display: block;
+                float: right;
+            }
+
+            .menu-wrapper {
+                display: none;
             }
         }
     }

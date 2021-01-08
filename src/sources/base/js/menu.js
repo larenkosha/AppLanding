@@ -7,3 +7,13 @@ $(window).on('scroll', function () {
         $('.block-header').removeClass('sticky');
     }
 });
+
+function menu() {
+    let burger = $('.burger');
+
+    burger.on('click', function(){
+        $(this).toggleClass('active');
+    })
+}
+
+menu();
