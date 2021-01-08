@@ -1,78 +1,73 @@
 &.block-download {
-    position: relative;
-    padding: 0 15px;
     margin-bottom: 120px;
 
-    .download-wrapper {
+    .center-wrapper {
         display: flex;
         align-items: center;
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
+    }
 
-        .download-info {
-            flex: 1 1;
-            padding-right: 10%;
+    .download-info {
+        flex: 1 1;
+        padding-right: 10%;
 
-            h2 {
-                color: #FFFFFF;
-                font: 400 48px $sf;
-                margin-bottom: 20px;
-            }
+        h2 {
+            color: #FFFFFF;
+            font: 400 48px $sf;
+            margin-bottom: 20px;
+        }
 
-            p {
-                color: #EBEBEB;
-                font: 400 25px/45px $sf;
-                margin-bottom: 20px;
-            }
+        p {
+            color: #EBEBEB;
+            font: 400 25px/45px $sf;
+            margin-bottom: 20px;
+        }
 
-            .bottom-line {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
+        .bottom-line {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
 
-                a {
-                    margin-right: 30px;
-                    margin-bottom: 30px;
+            a {
+                margin-right: 30px;
+                margin-bottom: 30px;
 
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }
+    }
 
-        .download-prev {
-            position: relative;
-            flex: 0 1 384px;
+    .download-prev {
+        position: relative;
+        flex: 0 1 384px;
 
-            .splash {
-                display: block;
-                position: absolute;
-                width: 600px;
-                height: 600px;
-                top: 70%;
-                left: 45%;
-                transform: translate(-50%, -50%);
-                z-index: -1;
+        .splash {
+            display: block;
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            top: 70%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
+        }
 
-            .image {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }

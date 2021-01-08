@@ -1,76 +1,71 @@
 &.block-banner {
-    position: relative;
-    padding: 0 15px;
     margin-bottom: 100px;
 
-    .banner-wrapper {
+    .center-wrapper {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
+    }
 
-        .banner-info {
-            flex: 1 1;
-            margin-top: 90px;
+    .banner-info {
+        flex: 1 1;
+        margin-top: 90px;
 
-            .inner-wrapper {
-                max-width: 660px;
+        .inner-wrapper {
+            max-width: 660px;
 
-                h1 {
-                    color: #1F1E1E;
-                    font: 400 64px $sf;
-                    margin-bottom: 30px;
-                }
+            h1 {
+                color: #1F1E1E;
+                font: 400 64px $sf;
+                margin-bottom: 30px;
+            }
 
-                p {
-                    color: #525050;
-                    font: 400 26px $sf;
-                    margin-bottom: 30px;
-                }
+            p {
+                color: #525050;
+                font: 400 26px $sf;
+                margin-bottom: 30px;
+            }
 
-                .bottom-line {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
+            .bottom-line {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
 
-                    .stl-btn1 {
-                        margin-right: 20px;
-                    }
+                .stl-btn1 {
+                    margin-right: 20px;
                 }
             }
         }
+    }
 
-        .banner-preview {
-            position: relative;
-            flex: 0 1 360px;
+    .banner-preview {
+        position: relative;
+        flex: 0 1 360px;
 
-            .banner-splash {
+        .banner-splash {
+            display: block;
+            position: absolute;
+            width: 724px;
+            height: 690px;
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: .7;
+            z-index: -1;
+
+            img {
                 display: block;
-                position: absolute;
-                width: 724px;
-                height: 690px;
-                top: 58%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: .7;
-                z-index: -1;
-
-                img {
-                    display: block;
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
+        }
 
-            .banner-image {
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+        .banner-image {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }

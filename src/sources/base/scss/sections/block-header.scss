@@ -7,86 +7,88 @@
     padding: 0 15px;
     @include trans;
 
-    &.fixed {
+    &.sticky {
         position: fixed;
         background: #ffffff;
         border-bottom: 1px solid #cccccc;
-        box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
         z-index: 9;
         @include trans;
+
+        .center-wrapper {
+            max-width: 100%;
+            padding: 10px 0;
+            @include trans;
+        }
     }
 
-    .header-wrapper {
+    .center-wrapper {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 1280px;
-        width: 100%;
         padding: 54px 0;
-        margin: 0 auto;
+        @include trans;
+    }
 
-        .header-logo {
+    .header-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: fit-content;
+
+        a {
             display: flex;
-            justify-content: flex-start;
             align-items: center;
-            width: fit-content;
-
-            a {
-                display: flex;
-                align-items: center;
+            @include trans;
+            
+            &:hover {
+                transform: scale(1.1);
                 @include trans;
-                
-                &:hover {
-                    transform: scale(1.1);
-                    @include trans;
-                }
             }
         }
+    }
 
-        .header-menu {
-            flex: 1 1;
+    .header-menu {
+        flex: 1 1;
 
-            .burger {
-                display: none;
-                position: relative;
-                width: 40px;
-                height: 40px;
-                border-radius: 4px;
-                border: 1px solid #cecece;
-                
-                span {}
-            }
+        .burger {
+            display: none;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            border: 1px solid #cecece;
+        }
 
-            .menu-wrapper {
+        .menu-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 0 1 auto;
+
+            .menu-items {
                 display: flex;
-                justify-content: flex-end;
                 align-items: center;
-                flex: 0 1 auto;
 
-                .menu-items {
-                    display: flex;
-                    align-items: center;
-
-                    .menu-item {
-                        &.active {
-                            a {
-                                color: #352DDC;
-                                @include trans;
-                            }
-                        }
-                        
+                .menu-item {
+                    &.active {
                         a {
-                            display: block;
-                            width: fit-content;
-                            color: #1B1B1D;
-                            font: 400 20px $sf;
-                            padding: 0 20px;
+                            color: #352DDC;
                             @include trans;
+                        }
+                    }
+                    
+                    a {
+                        display: block;
+                        width: fit-content;
+                        color: #1B1B1D;
+                        font: 400 20px $sf;
+                        padding: 0 20px;
+                        @include trans;
 
-                            &:hover {
-                                color: #4942E2;
-                                @include trans;
-                            }
+                        &:hover {
+                            color: #4942E2;
+                            @include trans;
                         }
                     }
                 }

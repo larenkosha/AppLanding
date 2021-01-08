@@ -1,32 +1,27 @@
 &.block-partners {
-    position: relative;
-    padding: 0 15px;
     margin-bottom: 100px;
 
-    .partners-wrapper {
-        max-width: 1280px;
-        width: 100%;
+    .center-wrapper {
         padding: 0 80px;
+    }
+
+    .prtnr-slider {
+        max-width: 1120px;
+        width: 100%;
         margin: 0 auto;
 
-        .prtnr-slider {
-            max-width: 1120px;
-            width: 100%;
-            margin: 0 auto;
+        .slide {
+            padding: 40px 15px;
 
-            .slide {
-                padding: 40px 15px;
+            .inner-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include trans;
 
-                .inner-wrapper {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                &:hover {
+                    transform: scale(1.1);
                     @include trans;
-
-                    &:hover {
-                        transform: scale(1.1);
-                        @include trans;
-                    }
                 }
             }
         }

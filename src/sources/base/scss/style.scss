@@ -15,6 +15,15 @@
 }
 
 .block {
+    position: relative;
+    padding: 0 15px;
+
+    .center-wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     @import 'sections/block-header';
     @import 'sections/block-content';
     @import 'sections/block-banner';

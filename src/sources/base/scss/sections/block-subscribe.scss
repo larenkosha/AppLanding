@@ -1,6 +1,5 @@
 &.block-subscribe {
-    position: relative;
-    padding: 0 15px;
+    background: #ffffff;
     margin-bottom: 140px;
 
     .splash {
@@ -11,100 +10,99 @@
         top: 100%;
         left: 100%;
         transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: 1;
 
         img {
             width: 100%;
         }
     }
 
-    .subscribe-wrapper {
+    .center-wrapper {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        max-width: 1360px;
-        width: 100%;
-        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
 
-        .top-line {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            flex: 0 1 600px;
+    .top-line {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 0 1 600px;
 
-            h2 {
-                flex: 0 1 376px;
-                color: #05031D;
-                font: 400 48px $sf;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-
-            h4 {
-                flex: 0 1 566px;
-                color: #464646;
-                font: 400 25px $sf;
-                text-align: center;
-                margin-bottom: 60px;
-            }
+        h2 {
+            flex: 0 1 376px;
+            color: #05031D;
+            font: 400 48px $sf;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .form-wrapper {
-            display: flex;
-            justify-content: center;
-            flex: 1 1 100%;
+        h4 {
+            flex: 0 1 566px;
+            color: #464646;
+            font: 400 25px $sf;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
 
-            .form {
-                flex: 0 1 756px;
+    .form-wrapper {
+        display: flex;
+        justify-content: center;
+        flex: 1 1 100%;
 
-                .form-box {
-                    display: flex;
-                    align-items: center;
-                    flex: 1 1 100%;
-                    border-radius: 60px;
-                    background: #352DDC;
-                    overflow: hidden;
-                    padding: 15px;
+        .form {
+            flex: 0 1 756px;
 
-                    input {
-                        flex: 1 1;
-                        color: #ffffff;
-                        font: 400 30px $sf;
-                        padding: 0 20px;
+            .form-box {
+                display: flex;
+                align-items: center;
+                flex: 1 1 100%;
+                border-radius: 60px;
+                background: #352DDC;
+                overflow: hidden;
+                padding: 15px;
 
-                        &::placeholder {
-                            color: inherit;
-                            font: inherit;
-                            @include trans;
-                        }
+                input {
+                    flex: 1 1;
+                    color: #ffffff;
+                    font: 400 30px $sf;
+                    padding: 0 20px;
 
-                        &:focus,
-                        &:active {
-                            &::placeholder {
-                                opacity: 0;
-                                @include trans;
-                            }
-                        }
+                    &::placeholder {
+                        color: inherit;
+                        font: inherit;
+                        @include trans;
                     }
 
-                    button {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex: 0 1 220px;
-                        height: 80px;
-                        border-radius: 60px;
-                        background: #ffffff;
-                        color: #352DDC;
-                        font: 400 28px $sf;
-                        text-align: center;
-                        cursor: pointer;
-                        @include trans;
-
-                        &:hover {
-                            opacity: .7;
+                    &:focus,
+                    &:active {
+                        &::placeholder {
+                            opacity: 0;
                             @include trans;
                         }
+                    }
+                }
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 0 1 220px;
+                    height: 80px;
+                    border-radius: 60px;
+                    background: #ffffff;
+                    color: #352DDC;
+                    font: 400 28px $sf;
+                    text-align: center;
+                    cursor: pointer;
+                    @include trans;
+
+                    &:hover {
+                        opacity: .7;
+                        @include trans;
                     }
                 }
             }

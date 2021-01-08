@@ -1,63 +1,58 @@
 &.block-interact {
-    position: relative;
-    padding: 0 15px;
     margin-bottom: 120px;
 
-    .interact-wrapper {
+    .center-wrapper {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
+    }
 
-        .interact-info {
-            flex: 1 1;
-            padding-right: 10%;
+    .interact-info {
+        flex: 1 1;
+        padding-right: 10%;
 
-            h2 {
-                color: #05031D;
-                font: 400 48px $sf;
-                margin-bottom: 20px;
-            }
+        h2 {
+            color: #05031D;
+            font: 400 48px $sf;
+            margin-bottom: 20px;
+        }
 
-            p {
-                color: #525050;
-                font: 400 25px $sf;
-                margin-bottom: 20px;
+        p {
+            color: #525050;
+            font: 400 25px $sf;
+            margin-bottom: 20px;
+        }
+    }
+
+    .interact-prev {
+        position: relative;
+        flex: 0 1 560px;
+
+        .splash {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 890px;
+            height: 852px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: .7;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
-        .interact-prev {
-            position: relative;
-            flex: 0 1 560px;
-
-            .splash {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                width: 890px;
-                height: 852px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: .7;
-                z-index: -1;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .image {
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+        .image {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
