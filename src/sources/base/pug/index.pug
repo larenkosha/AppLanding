@@ -1,106 +1,92 @@
 extends layout/layout
+
+block title
+    title App Landing
+
 block content
-    section.block.block-banner
-        .banner-wrapper
-            .banner-info
-                .inner-wrapper
-                    .title Awesome app for manage your task
-                    .desc Task management is the process of managing a task through its life cycle. It involves planning, testing, tracking, and reporting.
-                    .bottom-line
-                        a.stl-btn1(href="#") Start now
-                        a.stl-btn2(href="#")
-                            i.icon
-                                img(src="assets/img/play-button.png", alt="")
-                            | Take a tour
+    section.block.block-banner: .banner-wrapper
+        .banner-info: .inner-wrapper
+            .title Awesome app for manage your task
+            .desc Task management is the process of managing a task through its life cycle. It involves planning, testing, tracking, and reporting.
+            .bottom-line
+                a.stl-btn1(href="#") Start now
+                a.stl-btn2(href="#")
+                    i.icon: img(src="assets/img/play-button.png", alt="")
+                    | Take a tour
 
-            .banner-preview
-                .banner-splash
-                    img(src="assets/img/banner-bg.png", alt="")
-                .banner-image
-                    img(src="assets/img/banner-img.png", alt="")
+        .banner-preview
+            .banner-splash: img(src="assets/img/banner-bg.png", alt="")
+            .banner-image: img(src="assets/img/banner-img.png", alt="")
 
-    section.block.block-partners
-        .partners-wrapper
-            .prtnr-slider
-                +partners('assets/img/app-icon1.png', 'slack partner')
-                +partners('assets/img/app-icon2.png', 'freepik partner')
-                +partners('assets/img/app-icon3.png', 'google play partner')
-                +partners('assets/img/app-icon4.png', 'github partner')
-                +partners('assets/img/app-icon5.png', 'app store partner')
+    section.block.block-partners: .partners-wrapper: .prtnr-slider
+        +partners('assets/img/app-icon1.png', 'slack partner')
+        +partners('assets/img/app-icon2.png', 'freepik partner')
+        +partners('assets/img/app-icon3.png', 'google play partner')
+        +partners('assets/img/app-icon4.png', 'github partner')
+        +partners('assets/img/app-icon5.png', 'app store partner')
 
-    section.block.block-features
-        .features-wrapper
-            .main-title Experience Aweosme Features
-            .main-subtitle Task management is the process of managing a task through its life cycle. It involves planning.
-            .features-prev
-                .prev-splash
-                    img(src="assets/img/feature-bg.png", alt="features splash background")
-                .prev-image
-                    img(src="assets/img/feature-img.png", alt="features preview image")
-            .features-info
-                +feature('assets/img/feature-icon1.png', 'feature icon 1', 'Easy To Customize', 'Task management is the process of managing a task through its life cycle. It involves planning.')
-                +feature('assets/img/feature-icon2.png', 'feature icon 2', 'User Friendly', 'Task management is the process of managing a task through its life cycle. It involves planning.')
-                +feature('assets/img/feature-icon3.png', 'feature icon 3', 'Free Update', 'Task management is the process of managing a task through its life cycle. It involves planning.')
-                +feature('assets/img/feature-icon4.png', 'feature icon 4', 'Fully Secured', 'Task management is the process of managing a task through its life cycle. It involves planning.')
+    section.block.block-features: .features-wrapper
+        .main-title Experience Aweosme Features
+        .main-subtitle Task management is the process of managing a task through its life cycle. It involves planning.
+        
+        .features-prev
+            .prev-splash: img(src="assets/img/feature-bg.png", alt="features splash background")
+            .prev-image: img(src="assets/img/feature-img.png", alt="features preview image")
 
-    section.block.block-interact
-        .interact-wrapper
-            .interact-info
-                .title Easy To Interact The app
-                .desc Task management is the process of managing a task through its life cycle. It involves planning. Task management is the process.
-                a.stl-btn1(href="#") Learn more
-            .interact-prev
-                .splash
-                    img(src="assets/img/interact-bg.png", alt="interact splash image")
-                .image
-                    img(src="assets/img/interact-img.png", alt="interact preview image")
+        .features-info
+            +feature('assets/img/feature-icon1.png', 'feature icon 1', 'Easy To Customize', 'Task management is the process of managing a task through its life cycle. It involves planning.')
+            +feature('assets/img/feature-icon2.png', 'feature icon 2', 'User Friendly', 'Task management is the process of managing a task through its life cycle. It involves planning.')
+            +feature('assets/img/feature-icon3.png', 'feature icon 3', 'Free Update', 'Task management is the process of managing a task through its life cycle. It involves planning.')
+            +feature('assets/img/feature-icon4.png', 'feature icon 4', 'Fully Secured', 'Task management is the process of managing a task through its life cycle. It involves planning.')
 
-    section.block.block-presentation
-        .presentation-wrapper
-            .main-title More From. The App Inside
-            .main-subtitle Task management is the process of managing a task through its life cycle. 
-            .presentation-slider-wrapper
-                .splash.splash1
-                    img(src="assets/img/slider-splash1.png", alt="slider splash 1")
-                .splash.splash2
-                    img(src="assets/img/slider-splash2.png", alt="slider splash 2")
-                .line.line1
-                    img(src="assets/img/slider-lines1.png", alt="slider line 1")
-                .line.line2
-                    img(src="assets/img/slider-lines2.png", alt="slider line 2")
-                .pres-gal
-                    +pres('assets/img/slide-img1.png', 'slider image 1')
-                    +pres('assets/img/slide-img2.png', 'slider image 2')
-                    +pres('assets/img/slide-img1.png', 'slider image 3')
-                    +pres('assets/img/slide-img2.png', 'slider image 4')
-                    +pres('assets/img/slide-img1.png', 'slider image 1')
-                    +pres('assets/img/slide-img2.png', 'slider image 2')
+    section.block.block-interact: .interact-wrapper
+        .interact-info
+            .title Easy To Interact The app
+            .desc Task management is the process of managing a task through its life cycle. It involves planning. Task management is the process.
+            a.stl-btn1(href="#") Learn more
 
-    section.block.block-download
-        .download-wrapper
-            .download-info
-                .title Get The App. Free From Here
-                .desc Task management is the process of managing a task through its life cycle. It involves planning. Task management is the process.
-                .bottom-line
-                    a(href="#")
-                        img(src="assets/img/download-btn1.png", alt="google play button")
-                    a(href="#")
-                        img(src="assets/img/download-btn2.png", alt="app store button")
-            .download-prev
-                .splash
-                    img(src="assets/img/download-bg.png", alt="download splash image")
-                .image
-                    img(src="assets/img/download-img.png", alt="download preview image")
+        .interact-prev
+            .splash: img(src="assets/img/interact-bg.png", alt="interact splash image")
+            .image: img(src="assets/img/interact-img.png", alt="interact preview image")
+
+    section.block.block-presentation: .presentation-wrapper
+        .main-title More From. The App Inside
+        .main-subtitle Task management is the process of managing a task through its life cycle. 
+
+        .presentation-slider-wrapper
+            .splash.splash1: img(src="assets/img/slider-splash1.png", alt="slider splash 1")
+            .splash.splash2: img(src="assets/img/slider-splash2.png", alt="slider splash 2")
+            .line.line1: img(src="assets/img/slider-lines1.png", alt="slider line 1")
+            .line.line2: img(src="assets/img/slider-lines2.png", alt="slider line 2")
+            .pres-gal
+                +pres('assets/img/slide-img1.png', 'slider image 1')
+                +pres('assets/img/slide-img2.png', 'slider image 2')
+                +pres('assets/img/slide-img1.png', 'slider image 3')
+                +pres('assets/img/slide-img2.png', 'slider image 4')
+                +pres('assets/img/slide-img1.png', 'slider image 1')
+                +pres('assets/img/slide-img2.png', 'slider image 2')
+
+    section.block.block-download: .download-wrapper
+        .download-info
+            .title Get The App. Free From Here
+            .desc Task management is the process of managing a task through its life cycle. It involves planning. Task management is the process.
+            
+            .bottom-line
+                a(href="#"): img(src="assets/img/download-btn1.png", alt="google play button")
+                a(href="#"): img(src="assets/img/download-btn2.png", alt="app store button")
+
+        .download-prev
+            .splash: img(src="assets/img/download-bg.png", alt="download splash image")
+            .image: img(src="assets/img/download-img.png", alt="download preview image")
 
     section.block.block-subscribe
-        .splash
-            img(src="assets/img/subscribe-splash.png", alt="subscribe splash image")
+        .splash: img(src="assets/img/subscribe-splash.png", alt="subscribe splash image")
+
         .subscribe-wrapper
             .top-line
                 .main-title Subscribe & Get Newsletters
                 .main-subtitle Task management is the process of managing a task through its life cycle. 
-            .form-wrapper
-                form.form(action="#")
-                    .form-box
-                        input(type="text", placeholder="Enter Your Email Here")
-                        button(type="submit") Subscribe
+
+            .form-wrapper: form.form(action="#"): .form-box
+                input(type="text", placeholder="Enter Your Email Here")
+                button(type="submit") Subscribe
