@@ -32,3 +32,21 @@
 @mixin trans {
     transition: all .3s ease;
 }
+
+@mixin adaptive-font($fontWeight, $pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    $maxWidth: 1920;
+
+    font-weight: $fontWeight;
+    font-size: $pcSize + px;
+    font-family: $sf;
+
+    @media only screen and (max-width: 1920px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+}

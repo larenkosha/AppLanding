@@ -18,6 +18,11 @@
     position: relative;
     padding: 0 15px;
 
+    &.block-content {
+        padding: 0;
+        padding-top: 176px;
+    }
+
     .center-wrapper {
         max-width: 1280px;
         width: 100%;
@@ -25,7 +30,6 @@
     }
 
     @import 'sections/block-header';
-    @import 'sections/block-content';
     @import 'sections/block-banner';
     @import 'sections/block-partners';
     @import 'sections/block-features';

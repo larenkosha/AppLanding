@@ -13,13 +13,14 @@
 
         h2 {
             color: #05031D;
+            @include adaptive-font(500, 48, 24);
             font: 400 48px $sf;
             margin-bottom: 20px;
         }
 
         p {
             color: #525050;
-            font: 400 25px $sf;
+            @include adaptive-font(400, 25, 18);
             margin-bottom: 20px;
         }
     }

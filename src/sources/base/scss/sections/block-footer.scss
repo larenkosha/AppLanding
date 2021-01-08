@@ -34,7 +34,7 @@
         .block-info {
             max-width: 260px;
             color: #464646;
-            font: 400 18px $sf;
+            @include adaptive-font(400, 18, 16);
             margin-bottom: 20px;
         }
 
@@ -78,7 +78,7 @@
 
             .title {
                 color: #05031D;
-                font: 500 24px $sf;
+                @include adaptive-font(500, 24, 18);
                 margin-bottom: 20px;
             }
 
@@ -88,7 +88,7 @@
 
                     a {
                         color: #05031D;
-                        font: 400 18px $sf;
+                        @include adaptive-font(400, 18, 16);
                         cursor: pointer;
                         @include trans;
 
@@ -116,7 +116,7 @@
 
         .copyright {
             color: #FFFFFF;
-            font: 400 13px/25px $sf;
+            @include adaptive-font(400, 13, 12);
             text-align: center;
         }
     }

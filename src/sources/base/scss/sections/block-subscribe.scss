@@ -34,7 +34,7 @@
         h2 {
             flex: 0 1 376px;
             color: #05031D;
-            font: 400 48px $sf;
+            @include adaptive-font(500, 48, 24);
             text-align: center;
             margin-bottom: 20px;
         }
@@ -42,7 +42,7 @@
         h4 {
             flex: 0 1 566px;
             color: #464646;
-            font: 400 25px $sf;
+            @include adaptive-font(400, 25, 20);
             text-align: center;
             margin-bottom: 60px;
         }
@@ -68,7 +68,7 @@
                 input {
                     flex: 1 1;
                     color: #ffffff;
-                    font: 400 30px $sf;
+                    @include adaptive-font(400, 30, 18);
                     padding: 0 20px;
 
                     &::placeholder {
@@ -95,7 +95,7 @@
                     border-radius: 60px;
                     background: #ffffff;
                     color: #352DDC;
-                    font: 400 28px $sf;
+                    @include adaptive-font(500, 28, 18);
                     text-align: center;
                     cursor: pointer;
                     @include trans;

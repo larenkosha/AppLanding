@@ -4,7 +4,7 @@
     h2 {
         flex: 1 1 100%;
         color: #05031D;
-        font: 400 48px $sf;
+        @include adaptive-font(500, 48, 24);
         text-align: center;
         margin-bottom: 20px;
     }
@@ -12,7 +12,7 @@
     h4 {
         flex: 1 1 100%;
         color: #525050;
-        font: 400 25px $sf;
+        @include adaptive-font(400, 25, 18);
         text-align: center;
         margin-bottom: 80px;
     }
@@ -92,13 +92,14 @@
 
                 .title {
                     color: #05031D;
+                    @include adaptive-font(400, 30, 18);
                     font: 400 30px $sf;
                     margin-bottom: 10px;
                 }
 
                 .desc {
                     color: #525050;
-                    font: 400 16px $sf;
+                    @include adaptive-font(400, 16, 14);
                 }
             }
 
